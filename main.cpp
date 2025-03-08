@@ -66,13 +66,33 @@ int main()
 	spriteBee.setTexture(textureBee);
 	spriteBee.setPosition(0, 800);
 
+	// Draw the player
+	Texture texturePlayer;
+	texturePlayer.loadFromFile("graphics/player.png");
+	Sprite spritePlayer;
+	spritePlayer.setTexture(texturePlayer);
+	// spritePlayer.setPosition(spriteTree.getPosition().x + spriteTree.getLocalBounds().width + 30 , 700);
+	spritePlayer.setPosition(spriteTree.getPosition().x - 30 , 700);
+	spritePlayer.setScale(-1,1);
+
 	// is bee active
 	bool beeActive = false;
 
 	// initial speed of the bee
 	float beeSpeed = 0.0f;
 
+	// Add Branch at the tree
+	Texture textureBranch;
+	textureBranch.loadFromFile("graphics/branch.png");
+	Sprite spriteBranch1;
+	spriteBranch1.setTexture(textureBranch);
+	spriteBranch1.setPosition(spriteTree.getPosition().x  + spriteTree.getGlobalBounds().width, 100);
 
+	
+	Sprite spriteBranch2;
+	spriteBranch2.setTexture(textureBranch);
+	spriteBranch2.setPosition(spriteTree.getPosition().x, 500);
+	spriteBranch2.setScale(-1,1);
 	
 
 	Clock clock;
@@ -199,6 +219,13 @@ int main()
 		window.draw(spriteCloud1);
 		window.draw(spriteCloud2);
 		window.draw(spriteCloud3);
+
+		// Draw the branch
+		window.draw(spriteBranch1);
+		window.draw(spriteBranch2);
+		
+		// Draw the player
+		window.draw(spritePlayer);
 
 		// Show everything we just drew
 		window.display();
