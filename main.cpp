@@ -72,8 +72,19 @@ int main()
 	Sprite spritePlayer;
 	spritePlayer.setTexture(texturePlayer);
 	// spritePlayer.setPosition(spriteTree.getPosition().x + spriteTree.getLocalBounds().width + 30 , 700);
-	spritePlayer.setPosition(spriteTree.getPosition().x - 30 , 700);
+	spritePlayer.setPosition(spriteTree.getPosition().x  , 700);
 	spritePlayer.setScale(-1,1);
+
+
+	// Draw the Axe
+	Texture textureAxe;
+	textureAxe.loadFromFile("graphics/axe.png");
+	Sprite spriteAxe;
+	spriteAxe.setTexture(textureAxe);
+	// spritePlayer.setPosition(spriteTree.getPosition().x + spriteTree.getLocalBounds().width + 30 , 700);
+	spriteAxe.setPosition(spritePlayer.getPosition().x - 140 , spritePlayer.getPosition().y+115);
+	// spriteAxe.setScale(-1,1);
+	// spritePlayer.setRotation(120);
 
 	// is bee active
 	bool beeActive = false;
@@ -93,6 +104,7 @@ int main()
 	spriteBranch2.setTexture(textureBranch);
 	spriteBranch2.setPosition(spriteTree.getPosition().x, 500);
 	spriteBranch2.setScale(-1,1);
+	
 	
 
 	Clock clock;
@@ -118,6 +130,20 @@ int main()
 		*/
 
 		Time dt = clock.restart();
+
+		if(Keyboard::isKeyPressed(Keyboard::Left))
+		{
+			spritePlayer.setPosition(spriteTree.getPosition().x , 700);
+			spritePlayer.setScale(-1,1);
+		}
+
+		if(Keyboard::isKeyPressed(Keyboard::Right))
+		{
+			spritePlayer.setPosition(spriteTree.getPosition().x + spriteTree.getLocalBounds().width  , 700);
+			spritePlayer.setScale(1,1);
+		}
+
+
 
 		if (!beeActive)
 		{
@@ -226,6 +252,9 @@ int main()
 		
 		// Draw the player
 		window.draw(spritePlayer);
+
+		// Draw the Axe
+		window.draw(spriteAxe);
 
 		// Show everything we just drew
 		window.display();
