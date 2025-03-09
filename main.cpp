@@ -59,12 +59,20 @@ int main()
 	spriteTree.setTexture(textureTree);
 	spriteTree.setPosition(810, 0);
 
+	// Inital Tree speed and active
+	bool treeActive = false;
+	float treeSpeed = 0.0f;
+
+
+
 	// Draw bee in the screen
 	Texture textureBee;
 	textureBee.loadFromFile("graphics/bee.png");
 	Sprite spriteBee;
 	spriteBee.setTexture(textureBee);
 	spriteBee.setPosition(0, 800);
+
+
 
 	// Draw the player
 	Texture texturePlayer;
@@ -131,15 +139,39 @@ int main()
 
 		Time dt = clock.restart();
 
+
+		if(!treeActive)
+		{
+			srand((int)time(0) * 10);
+			treeSpeed = (rand() % 200) + 200;
+
+			srand((int)time(0) * 10);
+			treeActive = true;
+		}
+		else
+		{
+			if(Keyboard::isKeyPressed(Keyboard::Left) or Keyboard::isKeyPressed(Keyboard::Right))
+			{
+				spriteTree.setPosition(spriteTree.getPosition().x , spriteTree.getPosition().y + 200);
+
+				if(spriteTree.getPosition().y > 2400)
+				{
+					treeActive = false;
+				}
+			}	
+		}
+
 		if(Keyboard::isKeyPressed(Keyboard::Left))
 		{
 			spritePlayer.setPosition(spriteTree.getPosition().x , 700);
+			spriteAxe.setPosition(spritePlayer.getPosition().x - 140 , spritePlayer.getPosition().y+115);
 			spritePlayer.setScale(-1,1);
 		}
 
 		if(Keyboard::isKeyPressed(Keyboard::Right))
 		{
 			spritePlayer.setPosition(spriteTree.getPosition().x + spriteTree.getLocalBounds().width  , 700);
+			spriteAxe.setPosition(spritePlayer.getPosition().x - 10, spritePlayer.getPosition().y+115);
 			spritePlayer.setScale(1,1);
 		}
 
