@@ -69,6 +69,13 @@ int main(){
 	spriteTree.setTexture(textureTree);
 	spriteTree.setPosition(810, 0);
 
+	// Add RIP
+	Texture textureRIP;
+	textureRIP.loadFromFile("graphics/rip.png");
+	Sprite spriteRIP;
+	spriteRIP.setTexture(textureRIP);
+	spriteRIP.setPosition(660, 700);
+
 	// Inital Tree speed and active
 	bool treeActive = false;
 	float treeSpeed = 0.0f;
@@ -304,7 +311,7 @@ int main(){
 				if (branchPositions[i] == side::LEFT)
 				{
 					// Move the sprite to the left side
-					branches[i].setPosition(600, height);
+					branches[i].setPosition(610, height);
 					// Flip the sprite round the other way
 					branches[i].setRotation(180);
 				}
@@ -348,6 +355,9 @@ int main(){
 		// Draw the player
 		window.draw(spritePlayer);
 
+		// Draw RIP
+		window.draw(spriteRIP);
+
 		// Draw the Axe
 		window.draw(spriteAxe);
 
@@ -370,7 +380,7 @@ int main(){
 
 void updateBranches(int seed)
 {
-	for(int j=NUM_BRANCHES;j>0;j--)
+	for(int j=NUM_BRANCHES-1;j>0;j--)
 	{
 		branchPositions[j] = branchPositions[j-1];
 	}
