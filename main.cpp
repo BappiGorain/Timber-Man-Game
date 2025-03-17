@@ -11,8 +11,8 @@ void updateBranches(int seed);
 const int NUM_BRANCHES = 6;
 Sprite branches[NUM_BRANCHES];
 
-enum class side{LEFT,Right,NONE};
-side branchpositions[NUM_BRANCHES];
+enum class side{LEFT,RIGHT,NONE};
+side branchPositions[NUM_BRANCHES];
 
 int main(){
 	//Video Mode Object
@@ -134,8 +134,8 @@ int main(){
 	scoreText.setString("Score: 0");
 	scoreText.setCharacterSize(75);
 	scoreText.setCharacterSize(100);
-	messageText.setFillColor(Color::White);
-	scoreText.setFillColor(Color::White);
+	messageText.setFillColor(Color::Green);
+	scoreText.setFillColor(Color::Green);
 
 	FloatRect textRect = messageText.getLocalBounds();
 	messageText.setOrigin(textRect.left + textRect.width/2.0f,textRect.top + textRect.height/2.0f);
@@ -153,6 +153,26 @@ int main(){
 	Time gameTimeTotal;
 	float timeRemaining=6.0f;
 	float timeBarWidthPerSecond = timeBarStartWidth / timeRemaining;
+
+
+	for(int i=0;i<NUM_BRANCHES;i++)
+	{
+		branches[i].setTexture(textureBranch);
+		branches[i].setPosition(-2000,-2000);
+
+		branches[i].setOrigin(220,20);
+	}
+
+
+
+
+	updateBranches(1);
+	updateBranches(2);
+	updateBranches(3);
+	updateBranches(4);
+	updateBranches(5);
+
+
 
 	while (window.isOpen()){
 		window.pollEvent(event);
@@ -184,15 +204,15 @@ int main(){
 				messageText.setPosition(1920/2.0f,1080/2.0f);
 			}
 
-			if (Keyboard::isKeyPressed(Keyboard::Left) or Keyboard::isKeyPressed(Keyboard::Right)){
-				spriteBranch1.setPosition(spriteBranch1.getPosition().x, spriteBranch1.getPosition().y + 100);
-				spriteBranch2.setPosition(spriteBranch2.getPosition().x, spriteBranch2.getPosition().y + 100);
+			// if (Keyboard::isKeyPressed(Keyboard::Left) or Keyboard::isKeyPressed(Keyboard::Right)){
+			// 	spriteBranch1.setPosition(spriteBranch1.getPosition().x, spriteBranch1.getPosition().y + 100);
+			// 	spriteBranch2.setPosition(spriteBranch2.getPosition().x, spriteBranch2.getPosition().y + 100);
 
-				if (spriteBranch1.getPosition().x > 1500 or spriteBranch1.getPosition().y > 1500){
-					spriteBranch1.setPosition(spriteTree.getPosition().x + spriteTree.getGlobalBounds().width, 100);
-					spriteBranch2.setPosition(spriteTree.getPosition().x + spriteTree.getGlobalBounds().width, 500);
-				}
-			}
+			// 	if (spriteBranch1.getPosition().x > 1500 or spriteBranch1.getPosition().y > 1500){
+			// 		spriteBranch1.setPosition(spriteTree.getPosition().x + spriteTree.getGlobalBounds().width, 100);
+			// 		spriteBranch2.setPosition(spriteTree.getPosition().x + spriteTree.getGlobalBounds().width, 500);
+			// 	}
+			// }
 
 			if (Keyboard::isKeyPressed(Keyboard::Left)){
 				spritePlayer.setPosition(spriteTree.getPosition().x, 700);
@@ -275,6 +295,33 @@ int main(){
 			stringstream ss;
 			ss << "Score : " << score;
 			scoreText.setString(ss.str());
+
+			for (int i = 0; i < NUM_BRANCHES; i++)
+			{
+
+				float height = i * 150;
+
+				if (branchPositions[i] == side::LEFT)
+				{
+					// Move the sprite to the left side
+					branches[i].setPosition(600, height);
+					// Flip the sprite round the other way
+					branches[i].setRotation(180);
+				}
+				else if (branchPositions[i] == side::RIGHT)
+				{
+					// Move the sprite to the right side
+					branches[i].setPosition(1330, height);
+					// Set the sprite rotation to normal
+					branches[i].setRotation(0);
+
+				}
+				else
+				{
+					// Hide the branch
+					branches[i].setPosition(3000, height);
+				}
+			}
 		}
 
 		// Clear everything from the last frame
@@ -318,4 +365,31 @@ int main(){
 	}
 
 	return 0;
+}
+
+
+void updateBranches(int seed)
+{
+	for(int j=NUM_BRANCHES;j>0;j--)
+	{
+		branchPositions[j] = branchPositions[j-1];
+	}
+
+	//spwan new Branches at position 0
+
+	srand((int)time(0) + seed);
+	int r = (rand() % 5);
+	switch (r)
+	{
+		case 0:
+			branchPositions[0] = side::LEFT;
+			break;
+		
+		case 1:
+			branchPositions[0] = side::RIGHT;
+			break;
+		default:
+			branchPositions[0] = side::NONE;
+			break;
+	}
 }
