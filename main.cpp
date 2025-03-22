@@ -13,7 +13,7 @@ Sprite branches[NUM_BRANCHES];
 
 enum class side{LEFT,RIGHT,NONE};
 side branchPositions[NUM_BRANCHES];
-
+ 
 int main(){
 	//Video Mode Object
 	VideoMode vm(1920, 1080);
@@ -113,16 +113,57 @@ int main(){
 	float beeSpeed = 0.0f;
 
 	// Add Branch at the tree
+	// Texture textureBranch;
+	// textureBranch.loadFromFile("graphics/branch.png");
+	// Sprite spriteBranch1;
+	// spriteBranch1.setTexture(textureBranch);
+	// spriteBranch1.setPosition(spriteTree.getPosition().x + spriteTree.getGlobalBounds().width, 100);
+
+	// Sprite spriteBranch2;
+	// spriteBranch2.setTexture(textureBranch);
+	// spriteBranch2.setPosition(spriteTree.getPosition().x, 500);
+	// spriteBranch2.setScale(-1, 1);
+
+
+	// update the branch sprite
 	Texture textureBranch;
 	textureBranch.loadFromFile("graphics/branch.png");
-	Sprite spriteBranch1;
-	spriteBranch1.setTexture(textureBranch);
-	spriteBranch1.setPosition(spriteTree.getPosition().x + spriteTree.getGlobalBounds().width, 100);
+	for(int i=0;i<NUM_BRANCHES;i++)
+	{
+		branches[i].setTexture(textureBranch);
+		branches[i].setPosition(Vector2f(-2000,-2000));
+	}
 
-	Sprite spriteBranch2;
-	spriteBranch2.setTexture(textureBranch);
-	spriteBranch2.setPosition(spriteTree.getPosition().x, 500);
-	spriteBranch2.setScale(-1, 1);
+
+
+	updateBranches(1);
+	updateBranches(2);
+	updateBranches(3);
+	updateBranches(4);
+	updateBranches(5);
+
+
+	for(int i=0;i<NUM_BRANCHES;i++)
+	{
+		float height = i*100;
+		if(branchPositions[i]==side::LEFT)
+		{
+			branches[i].setOrigin(220,20);
+			branches[i].setPosition(600,height);
+			branches[i].setRotation(180);
+		}
+		else if(branchPositions[i]==side::RIGHT)
+		{
+			branches[i].setPosition(600,height);
+			branches[i].setRotation(0);
+		}
+		else
+		{
+			branches[i].setPosition(3000,height);
+		}
+	}
+
+
 
 	// bool branch1Active = false;
 	// bool branch2Active = false;
@@ -161,23 +202,6 @@ int main(){
 	float timeRemaining=6.0f;
 	float timeBarWidthPerSecond = timeBarStartWidth / timeRemaining;
 
-
-	for(int i=0;i<NUM_BRANCHES;i++)
-	{
-		branches[i].setTexture(textureBranch);
-		branches[i].setPosition(-2000,-2000);
-
-		branches[i].setOrigin(220,20);
-	}
-
-
-
-
-	updateBranches(1);
-	updateBranches(2);
-	updateBranches(3);
-	updateBranches(4);
-	updateBranches(5);
 
 
 
@@ -349,8 +373,12 @@ int main(){
 		window.draw(spriteCloud3);
 
 		// Draw the branch
-		window.draw(spriteBranch1);
-		window.draw(spriteBranch2);
+		// window.draw(spriteBranch1);
+		// window.draw(spriteBranch2);
+		for(int i=0;i<NUM_BRANCHES;i++)
+		{
+			window.draw(branches[i]);
+		}
 
 		// Draw the player
 		window.draw(spritePlayer);
