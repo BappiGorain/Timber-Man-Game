@@ -13,6 +13,7 @@ Sprite branches[NUM_BRANCHES];
 
 enum class side{LEFT,RIGHT,NONE};
 side branchPositions[NUM_BRANCHES];
+
  
 int main(){
 	//Video Mode Object
@@ -35,6 +36,9 @@ int main(){
 
 	// Set the spriteBackground to cover the screen
 	spriteBackground.setPosition(0, 0);
+
+	// Random number only once
+	srand((int)time(0));
 
 	// Create and load the cloud
 	Texture textureCloud;
@@ -74,7 +78,7 @@ int main(){
 	textureRIP.loadFromFile("graphics/rip.png");
 	Sprite spriteRIP;
 	spriteRIP.setTexture(textureRIP);
-	spriteRIP.setPosition(660, 700);
+	spriteRIP.setPosition(3000, 3000);
 
 	// Inital Tree speed and active
 	bool treeActive = false;
@@ -96,33 +100,24 @@ int main(){
 	spritePlayer.setPosition(spriteTree.getPosition().x, 700);
 	spritePlayer.setScale(-1, 1);
 
+	// Initialy player will be at the left side
+	side playerSide = side::LEFT;
+
+
 	// Draw the Axe
 	Texture textureAxe;
 	textureAxe.loadFromFile("graphics/axe.png");
 	Sprite spriteAxe;
 	spriteAxe.setTexture(textureAxe);
-	// spritePlayer.setPosition(spriteTree.getPosition().x + spriteTree.getLocalBounds().width + 30 , 700);
+	
 	spriteAxe.setPosition(spritePlayer.getPosition().x - 140, spritePlayer.getPosition().y + 115);
-	// spriteAxe.setScale(-1,1);
-	// spritePlayer.setRotation(120);
+
 
 	// is bee active
 	bool beeActive = false;
 
 	// initial speed of the bee
 	float beeSpeed = 0.0f;
-
-	// Add Branch at the tree
-	// Texture textureBranch;
-	// textureBranch.loadFromFile("graphics/branch.png");
-	// Sprite spriteBranch1;
-	// spriteBranch1.setTexture(textureBranch);
-	// spriteBranch1.setPosition(spriteTree.getPosition().x + spriteTree.getGlobalBounds().width, 100);
-
-	// Sprite spriteBranch2;
-	// spriteBranch2.setTexture(textureBranch);
-	// spriteBranch2.setPosition(spriteTree.getPosition().x, 500);
-	// spriteBranch2.setScale(-1, 1);
 
 
 	// update the branch sprite
@@ -137,17 +132,10 @@ int main(){
 	}
 
 
-
-	updateBranches(1);
-	updateBranches(2);
-	updateBranches(3);
-	updateBranches(4);
-	updateBranches(5);
-
-
-	
-
-
+	for(int i=0;i<NUM_BRANCHES;i++)
+	{
+		updateBranches(i);
+	}
 
 	// bool branch1Active = false;
 	// bool branch2Active = false;
@@ -188,10 +176,14 @@ int main(){
 	float timeRemaining=6.0f;
 	float timeBarWidthPerSecond = timeBarStartWidth / timeRemaining;
 
+	bool acceptInput = false;
 
 
 
-	while (window.isOpen()){
+
+
+	while (window.isOpen())
+	{
 		window.pollEvent(event);
 
 		if (Keyboard::isKeyPressed(Keyboard::Escape)){
@@ -202,8 +194,39 @@ int main(){
 			paused = false;
 			score = 0;
 			timeRemaining = 6.0;
+			acceptInput = true;
+			spriteRIP.setPosition(3000, 3000);
+			spritePlayer.setPosition(spriteTree.getPosition().x, 700);
+			spriteAxe.setPosition(spritePlayer.getPosition().x - 140, spritePlayer.getPosition().y + 115);
 		}
 
+		if(acceptInput)
+		{
+			if (Keyboard::isKeyPressed(Keyboard::Left))
+			{
+				spritePlayer.setPosition(spriteTree.getPosition().x, 700);
+				spriteAxe.setPosition(spritePlayer.getPosition().x - 140, spritePlayer.getPosition().y + 115);
+				spritePlayer.setRotation(180);
+				playerSide = side::LEFT;
+				updateBranches(score);
+				score++;
+			}
+			else if (Keyboard::isKeyPressed(Keyboard::Right)){
+				spritePlayer.setPosition(spriteTree.getPosition().x + spriteTree.getLocalBounds().width, 700);
+				spriteAxe.setPosition(spritePlayer.getPosition().x - 10, spritePlayer.getPosition().y + 115);
+				playerSide = side::RIGHT;
+				spritePlayer.setRotation(0);
+				updateBranches(score);
+				score++;
+			}
+		}
+
+		// if(playerSide == branchPositions[5])
+		// {
+		// 	messageText.setString("Player has been Squished");
+		// 	acceptInput = false;
+		// 	paused = true;
+		// }
 
 
 		if (!paused)
@@ -224,29 +247,17 @@ int main(){
 				FloatRect textRext  = messageText.getLocalBounds();
 				messageText.setOrigin(textRext.left + textRext.width/2.0f,textRect.top + textRect.height / 2.0f);
 				messageText.setPosition(1920/2.0f,1080/2.0f);
+				
+				spritePlayer.setPosition(3000,3000); 
+				spriteAxe.setPosition(3000,3000);
+				spriteRIP.setPosition(660, 700);
+
+				acceptInput = false;
 			}
+			
+			
 
-			// if (Keyboard::isKeyPressed(Keyboard::Left) or Keyboard::isKeyPressed(Keyboard::Right)){
-			// 	spriteBranch1.setPosition(spriteBranch1.getPosition().x, spriteBranch1.getPosition().y + 100);
-			// 	spriteBranch2.setPosition(spriteBranch2.getPosition().x, spriteBranch2.getPosition().y + 100);
-
-			// 	if (spriteBranch1.getPosition().x > 1500 or spriteBranch1.getPosition().y > 1500){
-			// 		spriteBranch1.setPosition(spriteTree.getPosition().x + spriteTree.getGlobalBounds().width, 100);
-			// 		spriteBranch2.setPosition(spriteTree.getPosition().x + spriteTree.getGlobalBounds().width, 500);
-			// 	}
-			// }
-
-			if (Keyboard::isKeyPressed(Keyboard::Left)){
-				spritePlayer.setPosition(spriteTree.getPosition().x, 700);
-				spriteAxe.setPosition(spritePlayer.getPosition().x - 140, spritePlayer.getPosition().y + 115);
-				spritePlayer.setScale(-1, 1);
-			}
-
-			if (Keyboard::isKeyPressed(Keyboard::Right)){
-				spritePlayer.setPosition(spriteTree.getPosition().x + spriteTree.getLocalBounds().width, 700);
-				spriteAxe.setPosition(spritePlayer.getPosition().x - 10, spritePlayer.getPosition().y + 115);
-				spritePlayer.setScale(1, 1);
-			}
+			
 
 			if (!beeActive){
 				srand((int)time(0) * 10);
@@ -328,6 +339,7 @@ int main(){
 					// Move the sprite to the left side
 					branches[i].setPosition(610, height);
 					// Flip the sprite round the other way
+					branches[i].setOrigin(220,40);
 					branches[i].setRotation(180);
 				}
 				else if (branchPositions[i] == side::RIGHT)
@@ -366,6 +378,9 @@ int main(){
 		// Draw the branch
 		// window.draw(spriteBranch1);
 		// window.draw(spriteBranch2);
+
+
+		// Draw all Branches
 		for(int i=0;i<NUM_BRANCHES;i++)
 		{
 			window.draw(branches[i]);
@@ -376,6 +391,8 @@ int main(){
 
 		// Draw RIP
 		window.draw(spriteRIP);
+
+		
 
 		// Draw the Axe
 		window.draw(spriteAxe);
@@ -406,7 +423,7 @@ void updateBranches(int seed)
 
 	//spwan new Branches at position 0
 
-	srand((int)time(0) + seed);
+	// srand((int)time(0) + seed);
 	int r = (rand() % 5);
 	switch (r)
 	{
