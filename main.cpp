@@ -128,10 +128,12 @@ int main(){
 	// update the branch sprite
 	Texture textureBranch;
 	textureBranch.loadFromFile("graphics/branch.png");
+
 	for(int i=0;i<NUM_BRANCHES;i++)
 	{
 		branches[i].setTexture(textureBranch);
 		branches[i].setPosition(Vector2f(-2000,-2000));
+		branches[i].setOrigin(220,20);
 	}
 
 
@@ -143,25 +145,7 @@ int main(){
 	updateBranches(5);
 
 
-	for(int i=0;i<NUM_BRANCHES;i++)
-	{
-		float height = i*100;
-		if(branchPositions[i]==side::LEFT)
-		{
-			branches[i].setOrigin(220,20);
-			branches[i].setPosition(600,height);
-			branches[i].setRotation(180);
-		}
-		else if(branchPositions[i]==side::RIGHT)
-		{
-			branches[i].setPosition(600,height);
-			branches[i].setRotation(0);
-		}
-		else
-		{
-			branches[i].setPosition(3000,height);
-		}
-	}
+	
 
 
 
@@ -173,6 +157,8 @@ int main(){
 	bool paused = true;
 	int score = 0;
 
+
+	// Message and Score
 	Text messageText,scoreText;
 	Font font;
 	font.loadFromFile("fonts/KOMIKAP_.ttf");
@@ -190,11 +176,11 @@ int main(){
 	messageText.setPosition(1920/2.0f,1080/2.0f);
 	scoreText.setPosition(20,20);
 
-
+	//TimeBar
 	RectangleShape timeBar;
 	float timeBarStartWidth=400;
 	float timeBarHeight=80;
-	timeBar.setSize(Vector2f(timeBarStartWidth,timeBarStartWidth));
+	timeBar.setSize(Vector2f(timeBarStartWidth,timeBarHeight));
 	timeBar.setFillColor(Color::Red);
 	timeBar.setPosition((1920/2)-timeBarStartWidth/2,980);
 
@@ -220,11 +206,16 @@ int main(){
 
 
 
-		if (!paused){
+		if (!paused)
+		{
 			Time dt = clock.restart();
+			// Time remaining
 			timeRemaining -= dt.asSeconds();
-			timeBar.setSize(Vector2f(timeBarWidthPerSecond*timeRemaining,timeBarHeight));
+			// TimeBar changes with respect to time
+			timeBar.setSize(Vector2f(timeBarWidthPerSecond*timeRemaining,timeBarHeight));  
 
+
+			// when time remainaing is 0 then the game will automatically paused
 			if(timeRemaining <= 0.0f)
 			{
 				paused = true;
