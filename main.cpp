@@ -37,8 +37,8 @@ int main(){
 	// Set the spriteBackground to cover the screen
 	spriteBackground.setPosition(0, 0);
 
-	// Random number only once
-	srand((int)time(0));
+	// // Random number only once
+	// srand((int)time(0));
 
 	// Create and load the cloud
 	Texture textureCloud;
@@ -206,16 +206,18 @@ int main(){
 			{
 				spritePlayer.setPosition(spriteTree.getPosition().x, 700);
 				spriteAxe.setPosition(spritePlayer.getPosition().x - 140, spritePlayer.getPosition().y + 115);
-				spritePlayer.setRotation(180);
+				spritePlayer.setRotation(0);
 				playerSide = side::LEFT;
 				updateBranches(score);
 				score++;
 			}
 			else if (Keyboard::isKeyPressed(Keyboard::Right)){
-				spritePlayer.setPosition(spriteTree.getPosition().x + spriteTree.getLocalBounds().width, 700);
-				spriteAxe.setPosition(spritePlayer.getPosition().x - 10, spritePlayer.getPosition().y + 115);
+				spritePlayer.setPosition(spriteTree.getPosition().x + spriteTree.getLocalBounds().width+120, 700);
+				spriteAxe.setPosition(spritePlayer.getPosition().x - 10, spritePlayer.getPosition().y );
 				playerSide = side::RIGHT;
-				spritePlayer.setRotation(0);
+				// spritePlayer.setRotation(180);
+				// spritePlayer.setOrigin(180,20);
+				// spritePlayer.setScale(-1,1);
 				updateBranches(score);
 				score++;
 			}
@@ -423,7 +425,7 @@ void updateBranches(int seed)
 
 	//spwan new Branches at position 0
 
-	// srand((int)time(0) + seed);
+	srand((int)time(0) + seed);
 	int r = (rand() % 5);
 	switch (r)
 	{
