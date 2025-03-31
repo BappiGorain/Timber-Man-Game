@@ -120,6 +120,18 @@ int main(){
 	float beeSpeed = 0.0f;
 
 
+
+	// Log
+	Texture textureLog;
+	textureLog.loadFromFile("graphics/log.png");
+	Sprite spriteLog;
+	spriteLog.setTexture(textureLog);
+	spriteLog.setPosition(spriteTree.getPosition().x,700);
+
+	bool logActive = false;
+	float logSpeedX = 1000;
+	float logSpeedY = -1500;
+
 	// update the branch sprite
 	Texture textureBranch;
 	textureBranch.loadFromFile("graphics/branch.png");
@@ -178,6 +190,7 @@ int main(){
 
 	bool acceptInput = false;
 
+	// spritePlayer.setOrigin(spriteTree.getPosition().x, 700);
 
 
 
@@ -206,20 +219,29 @@ int main(){
 			{
 				spritePlayer.setPosition(spriteTree.getPosition().x, 700);
 				spriteAxe.setPosition(spritePlayer.getPosition().x - 140, spritePlayer.getPosition().y + 115);
-				spritePlayer.setRotation(0);
+				
+				
+				spritePlayer.setScale(-1,1);
 				playerSide = side::LEFT;
 				updateBranches(score);
 				score++;
+				timeRemaining += (2 / score) + .15;
+				spriteLog.setPosition(810, 720);
+				logSpeedX = 5000;
+				logActive = true;
 			}
-			else if (Keyboard::isKeyPressed(Keyboard::Right)){
-				spritePlayer.setPosition(spriteTree.getPosition().x + spriteTree.getLocalBounds().width+120, 700);
-				spriteAxe.setPosition(spritePlayer.getPosition().x - 10, spritePlayer.getPosition().y );
+			else if (Keyboard::isKeyPressed(Keyboard::Right))
+			{
+				spritePlayer.setPosition(spriteTree.getPosition().x + spriteTree.getLocalBounds().width, 700);
+				spriteAxe.setPosition(spriteTree.getPosition().x + spriteTree.getLocalBounds().width - 10, spritePlayer.getPosition().y + 100);
 				playerSide = side::RIGHT;
-				// spritePlayer.setRotation(180);
-				// spritePlayer.setOrigin(180,20);
-				// spritePlayer.setScale(-1,1);
+				spritePlayer.setScale(1,1);
 				updateBranches(score);
-				score++;
+				score++;	
+				timeRemaining += (2 / score) + .15;
+				spriteLog.setPosition(810, 720);
+				logSpeedX = -5000;
+				logActive = true;
 			}
 		}
 
@@ -319,11 +341,30 @@ int main(){
 				spriteCloud3.setPosition(-600, 200);
 				cloud3Active = true;
 			}
-			else{
+			else
+			{
 				spriteCloud3.setPosition(spriteCloud3.getPosition().x + cloud3Speed * dt.asSeconds(), spriteCloud3.getPosition().y);
 
 				if (spriteCloud3.getPosition().x > 2000){
 					cloud3Active = false;
+				}
+			}
+
+
+			if (logActive)
+			{
+
+				spriteLog.setPosition(
+					spriteLog.getPosition().x + (logSpeedX * dt.asSeconds()),
+					spriteLog.getPosition().y + (logSpeedY * dt.asSeconds()));
+
+				// Has the insect reached the right hand edge of the screen?
+				if (spriteLog.getPosition().x < -100 ||
+					spriteLog.getPosition().x > 2000)
+				{
+					// Set it up ready to be a whole new cloud next frame
+					logActive = false;
+					spriteLog.setPosition(810, 720);
 				}
 			}
 
@@ -404,6 +445,9 @@ int main(){
 
 		//Draw the timeBar
 		window.draw(timeBar);
+
+		/// Draw the log
+		window.draw(spriteLog);
 
 		if(paused){
 			window.draw(messageText);
