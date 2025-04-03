@@ -111,7 +111,7 @@ int main()
 	texturePlayer.loadFromFile("graphics/player.png");
 	Sprite spritePlayer;
 	spritePlayer.setTexture(texturePlayer);
-	spritePlayer.setPosition(580, 720);
+	spritePlayer.setPosition(2000, 660);
 
 	side playerSide = side::LEFT;
 
@@ -119,7 +119,7 @@ int main()
 	textureRIP.loadFromFile("graphics/rip.png");
 	Sprite spriteRIP;
 	spriteRIP.setTexture(textureRIP);
-	spriteRIP.setPosition(600, 860);
+	spriteRIP.setPosition(650, 860);
 
 	Texture textureAxe;
 	textureAxe.loadFromFile("graphics/axe.png");
@@ -185,7 +185,7 @@ int main()
 				branchPositions[i] = side::NONE;
 			}
 			spriteRIP.setPosition(675, 2000);
-			spritePlayer.setPosition(580, 720);
+			spritePlayer.setPosition(630, 720);
 			acceptInput = true;
 		}
 
@@ -196,10 +196,10 @@ int main()
 				playerSide = side::RIGHT;
 				score++;
 				timeRemaining += (2 / score) + .15;
-				spriteAxe.setPosition(AXE_POSITION_RIGHT,
-					spriteAxe.getPosition().y);
-				spritePlayer.setPosition(1200, 720);
+				spriteAxe.setPosition(1100,820);
+				spritePlayer.setPosition(1130, 720);
 				updateBranches(score);
+				spritePlayer.setScale(1,1);
 				spriteLog.setPosition(810, 720);
 				logSpeedX = -5000;
 				logActive = true;
@@ -212,12 +212,12 @@ int main()
 				playerSide = side::LEFT;
 				score++;
 				timeRemaining += (2 / score) + .15;
-				spriteAxe.setPosition(AXE_POSITION_LEFT,
-					spriteAxe.getPosition().y);
-				spritePlayer.setPosition(580, 720);
+				spriteAxe.setPosition(700,820);
+				spritePlayer.setPosition(800, 720);
 				updateBranches(score);
+				spritePlayer.setScale(-1,1);
 				spriteLog.setPosition(810, 720);
-				logSpeedX = -5000;
+				logSpeedX = 5000;
 				logActive = true;
 				acceptInput = false;
 				chop.play();
@@ -240,6 +240,8 @@ int main()
 					textRect.top +
 					textRect.height / 2.0f);
 				messageText.setPosition(1920 / 2.0f, 1080 / 2.0f);
+				spriteAxe.setPosition(-2000,-2000);
+				spritePlayer.setPosition(-3000,3000);
 				outOfTime.play();
 			}
 
@@ -375,7 +377,14 @@ int main()
 			{
 				paused = true;
 				acceptInput = false;
-				spriteRIP.setPosition(525, 760);
+				if(playerSide == side::LEFT)
+				{
+					spriteRIP.setPosition(spritePlayer.getPosition().x-150, spritePlayer.getPosition().y+10);
+				}
+				else
+				{
+					spriteRIP.setPosition(spritePlayer.getPosition().x, spritePlayer.getPosition().y+10);
+				}
 				spritePlayer.setPosition(2000, 660);
 				messageText.setString("SQUISHED!!");
 				FloatRect textRect = messageText.getLocalBounds();
@@ -384,6 +393,9 @@ int main()
 					textRect.top + textRect.height / 2.0f);
 				messageText.setPosition(1920 / 2.0f,
 					1080 / 2.0f);
+				spriteAxe.setPosition(-2000,-2000);
+				spritePlayer.setPosition(-3000,3000);
+				spriteLog.setPosition(810, 720);
 				death.play();
 			}
 		}
