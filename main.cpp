@@ -143,17 +143,17 @@ int main()
 	bool acceptInput = false;
 
 	SoundBuffer chopBuffer;
-	chopBuffer.loadFromFile("sound/chop.wav");
+	chopBuffer.loadFromFile("audio/choppingtree.wav");
 	Sound chop;
 	chop.setBuffer(chopBuffer);
 
 	SoundBuffer deathBuffer;
-	deathBuffer.loadFromFile("sound/death.wav");
+	deathBuffer.loadFromFile("audio/death.wav");
 	Sound death;
 	death.setBuffer(deathBuffer);
 
 	SoundBuffer ootBuffer;
-	ootBuffer.loadFromFile("sound/out_of_time.wav");
+	ootBuffer.loadFromFile("audio/supermariogameover.wav");
 	Sound outOfTime;
 	outOfTime.setBuffer(ootBuffer);
 	
