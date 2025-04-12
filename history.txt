@@ -1,0 +1,1000 @@
+ 1008  mkdir 2241002199_GPWC++
+ 1009  cd 2241002199_GPWC++
+ 1010  mkdir Game_Program
+ 1011  cd Game_Program
+ 1012  touch main.cpp
+ 1013  code .
+ 1014  cd
+ 1015  cd Downloads
+ 1016  ls
+ 1017  rm -f VSCodeUserSetup-x64-1.94.2.exe
+ 1018  cd ..
+ 1019  cp Downloads/ Desktop/2241002199_GPWC++
+ 1020  cp -r Downloads/ Desktop/2241002199_GPWC++
+ 1021  clear
+ 1022  exit
+ 1023  cpp build
+ 1024  clear
+ 1025  gcc main.cpp
+ 1026  cd ..
+ 1027  ls
+ 1028  rm -r Downloads/
+ 1029  ls
+ 1030  cd Game_Program
+ 1031  mkdir assets
+ 1032  cd assets
+ 1033  mkdir images
+ 1034  cd images
+ 1035  ls
+ 1036  clear
+ 1037  cd
+ 1038  cd Desktop
+ 1039  ls
+ 1040  cd 2241002199_PyDS
+ 1041  ls
+ 1042  touch cmd.sh
+ 1043  vim cmd.sh
+ 1044  ./cmd.sh
+ 1045  chmod +x cmd.sh
+ 1046  ./cmd.sh
+ 1047  ls
+ 1048  vim cmd.sh
+ 1049  ./cmd.sh
+ 1050  vim cmd.sh
+ 1051  ./cmd.sh
+ 1052  bash cmd.sh
+ 1053  vim cmd.sh
+ 1054  bash cmd.sh
+ 1055  ls
+ 1056  cd PyLab-2
+ 1057  jupyter notebook
+ 1058  clear
+ 1059  jupyter notebook
+ 1060  clear
+ 1061  exit
+ 1062  ifconfig
+ 1063  isqlplus
+ 1064  ls
+ 1065  clear
+ 1066  ls
+ 1067  clear
+ 1068  isqlplus
+ 1069  ifconfig
+ 1070  sh
+ 1071  /bin/python3 /home/student/Desktop/Bappi/Python/binarySearch.py
+ 1072  /bin/python3 /home/student/Desktop/Bappi/Python/selectionSort.py
+ 1073  lsb_release -a
+ 1074  hsotname
+ 1075  hostname
+ 1076  user
+ 1077  users
+ 1078  USER
+ 1079  USERS
+ 1080  users
+ 1081  exit
+ 1082  isqlplus
+ 1083  clear
+ 1084  git status
+ 1085  clear
+ 1086  docker
+ 1087  clear
+ 1088  k8s
+ 1089  clear
+ 1090  kubernetes
+ 1091  clear
+ 1092  history
+ 1093  clear
+ 1094  cd Desktop
+ 1095  cd 2241002199_PyDS
+ 1096  ls 
+ 1097  cd PyLab-3
+ 1098  mkdir PyLab-3 && cd PyLab-3
+ 1099  touch BinarySearch.ipynb
+ 1100  jupyter notebook'
+ 1101  exit
+ 1102  jupyter notebook
+ 1103  isqlplus
+ 1104  clear
+ 1105  isqlplus
+ 1106  clear
+ 1107  exit
+ 1108  cd Desktop
+ 1109  mkdir 2241002199_ID
+ 1110  cd 2241002199_ID
+ 1111  vim ass2
+ 1112  make
+ 1113  cd Timber/
+ 1114  ls
+ 1115  make
+ 1116  make
+ 1117  cd Timber/
+ 1118  make
+ 1119  gedit timber.cpp&
+ 1120  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1121  ./test
+ 1122  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1123  ./test
+ 1124  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1125  ./test
+ 1126  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1127  ./test
+ 1128  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1129  ./test
+ 1130  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1131  ./test
+ 1132  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1133  ./test
+ 1134  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1135  ./test
+ 1136  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1137  ./test
+ 1138  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1139  ./test
+ 1140  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1141  ./test
+ 1142  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1143  ./test
+ 1144  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1145  ./test
+ 1146  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1147  ./test
+ 1148  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1149  ./test
+ 1150  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1151  ./test
+ 1152  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1153  ./test
+ 1154  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1155  ./test
+ 1156  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1157  ./test
+ 1158  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1159  ./test
+ 1160  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1161  ./test
+ 1162  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1163  ./test
+ 1164  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1165  ./test
+ 1166  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1167  clear
+ 1168  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1169  clear
+ 1170  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1171  ./test
+ 1172  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1173  ./test
+ 1174  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1175  ./test
+ 1176  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1177  ./test
+ 1178  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1179  clear
+ 1180  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1181  clear
+ 1182  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1183  ./test
+ 1184  gedit timber.cpp&
+ 1185  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1186  ./test
+ 1187  ls
+ 1188  cd Desktop/
+ 1189  cd Bappi/
+ 1190  lw
+ 1191  ls
+ 1192  cd Python/
+ 1193  ls
+ 1194  code .
+ 1195  if config; ifconfig
+ 1196  ifconfig
+ 1197  sudo pip install paramiko
+ 1198  /bin/python3 /home/student/Desktop/Bappi/Python/selectionSort.py
+ 1199  python3 selectionSort.py 
+ 1200  ls
+ 1201  touch mergeSort.py
+ 1202  python3 mergeSort.py 
+ 1203  touch mergeSort.py
+ 1204  python3 mergeSort.py 
+ 1205  /bin/python3 /home/student/Desktop/Bappi/Python/mergeSort.py
+ 1206  /bin/python3 "/home/student/Desktop/Bappi/Python/Assignment 2/q1.py"
+ 1207  /bin/python3 "/home/student/Desktop/Bappi/Python/Assignment 2/q2.py"
+ 1208  /bin/python3 "/home/student/Desktop/Bappi/Python/Assignment 2/q3.py"
+ 1209  /bin/python3 "/home/student/Desktop/Bappi/Python/Assignment 2/q4.py"
+ 1210  /bin/python3 "/home/student/Desktop/Bappi/Python/Assignment 2/q5.py"
+ 1211  cd ..
+ 1212  ls
+ 1213  cd Game
+ 1214  ls
+ 1215  make
+ 1216  git add .
+ 1217  git commit -m"Score and pause added"
+ 1218  git log
+ 1219  git push
+ 1220  git add .
+ 1221  git commit -m"Score and pause added"
+ 1222  git push
+ 1223  git add .
+ 1224  git commit -m"Score and pause added"
+ 1225  git config --global user.name "BappiGorain"
+ 1226  git commit -m"Score and pause added"
+ 1227  git push
+ 1228  exit
+ 1229  cd Desktop/
+ 1230  cd bapp
+ 1231  cd Bappi/
+ 1232  ls
+ 1233  cd Game
+ 1234  ls
+ 1235  git clone https://github.com/BappiGorain/Timber-Man-Game.git
+ 1236  git clone git@github.com:BappiGorain/Timber-Man-Game.git
+ 1237  ssh-keygen
+ 1238  cat /home/student/.ssh/id_rsa.pub
+ 1239  git clone git@github.com:BappiGorain/Timber-Man-Game.git
+ 1240  ls
+ 1241  cd Timber-Man-Game/
+ 1242  code .
+ 1243  gedit timber.cpp&
+ 1244  g++ timber.cpp -o test -lsfml-system -window -lsfml-graphics
+ 1245  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1246  ./test
+ 1247  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1248  ./test
+ 1249  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1250  ./test
+ 1251  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1252  ./test
+ 1253  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1254  ./test
+ 1255  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1256  ./test
+ 1257  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1258  ./test
+ 1259  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1260  ./test
+ 1261  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1262  clear
+ 1263  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1264  ./test
+ 1265  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1266  ./test
+ 1267  clear
+ 1268  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1269  ./test
+ 1270  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1271  ./test
+ 1272  cd Desktop/Deba_cpp
+ 1273  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1274  ./timber
+ 1275  ./test
+ 1276  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1277  ./test
+ 1278  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1279  ./test
+ 1280  cd ..
+ 1281  cp Timber-Man-Game ../../2241002199_GPWC++
+ 1282  cp -r Timber-Man-Game ../../2241002199_GPWC++
+ 1283  cd
+ 1284  cd Desktop
+ 1285  ls
+ 1286  cd 2241002199_GPWC++
+ 1287  ls
+ 1288  cd timber-Man-Game
+ 1289  code .
+ 1290  ./run.sh
+ 1291  ls
+ 1292  cd Timber-Man-Game
+ 1293  ./run.sh
+ 1294  clear
+ 1295  run.sh
+ 1296  clear
+ 1297  ./run.sh
+ 1298  clear
+ 1299  pip --version
+ 1300  python3 -v
+ 1301  clear
+ 1302  pip install textblob
+ 1303  apt get update
+ 1304  apt update
+ 1305  sudo apt update
+ 1306  clear
+ 1307  exit
+ 1308  cd Desktop
+ 1309  cd 2241002199_PyDS
+ 1310  ls
+ 1311  mkdir PyLab-4
+ 1312  cd Pylab-4
+ 1313  cd PyLab-4
+ 1314  jupyter notebook
+ 1315  gedit static.cpp &
+ 1316  cd 2241003044
+ 1317  mkdir 2241003044
+ 1318  cd 2241003044
+ 1319  gedit static.cpp &
+ 1320  g++ static.cpp
+ 1321  ./a.out
+ 1322  g++ static.cpp
+ 1323  gedit timber.cpp &
+ 1324  g++ timber.cpp
+ 1325  g++ timber.cpp -o timber -lsfml-system -lsfml-window -lsfml-graphics
+ 1326  ./a.out
+ 1327  g++ timber.cpp -o timber -lsfml-system -lsfml-window -lsfml-graphics
+ 1328  ./timber
+ 1329  g++ timber.cpp -o timber -lsfml-system -lsfml-window -lsfml-graphics
+ 1330  ./timber
+ 1331  pip install textblob
+ 1332  clear
+ 1333  exit
+ 1334  ipython
+ 1335  clear
+ 1336  cd
+ 1337  pip install --upgrade numpy scipy
+ 1338  pip install textblob
+ 1339  clear
+ 1340  python -m textblob.download_corpora
+ 1341  python3 -m textblob.download_corpora
+ 1342  clear
+ 1343  ipython
+ 1344  clear
+ 1345  python3 -v
+ 1346  clear
+ 1347  python3 --version
+ 1348  clear
+ 1349  golang -v
+ 1350  clear
+ 1351  docker.io
+ 1352  ping docker.io
+ 1353  clear
+ 1354  ping docker.org
+ 1355  clear
+ 1356  exit
+ 1357  cd Desktop/2241002199_PyDS
+ 1358  cd PyLab-5
+ 1359  jupyter notebook
+ 1360  clear
+ 1361  apt update
+ 1362  sudo apt update
+ 1363  clear
+ 1364  jupyter notebook
+ 1365  CLEAR
+ 1366  celar
+ 1367  clear
+ 1368  jupyter notebook
+ 1369  exit
+ 1370  history
+ 1371  clear
+ 1372  sudo su
+ 1373  clear
+ 1374  exit
+ 1375  isqlplus
+ 1376  clear
+ 1377  isqlplus
+ 1378  clear
+ 1379  sqlplus/id2241002199/id2241002199@//172.30.16.99/ora11g
+ 1380  sqlplus/id2241002199/id2241002199@/172.30.16.99/ora11g
+ 1381  sqlplus/id2241002199/id2241002199@//172.30.16.99/ora11g
+ 1382  isqlplus/id2241002199/id2241002199@//172.30.16.99/ora11g
+ 1383  sqlplus/id2241002199/id2241002199@//172.30.16.99/ora11g/
+ 1384  sqlplus/id2241002199/id2241002199@//172.30.16.99/ora11g
+ 1385  bash sqlplus/id2241002199/id2241002199@//172.30.16.99/ora11g
+ 1386  run sqlplus/id2241002199/id2241002199@//172.30.16.99/ora11g
+ 1387  clear
+ 1388  sqlplus/id2241002199/id2241002199@//172.30.16.99/ora11g
+ 1389  exec sqlplus/id2241002199/id2241002199@//172.30.16.99/ora11g
+ 1390  echo lalita
+ 1391  clear
+ 1392  echo exit
+ 1393  exec
+ 1394  exec echo hello
+ 1395  exec -it sqlplus/id2241002199/id2241002199@//172.30.16.99/ora11g
+ 1396  clear
+ 1397  sqlplus/id2241002199/id2241002199@//172.30.16.99/ora11g
+ 1398  isqlplus
+ 1399  exit
+ 1400  history
+ 1401  exit
+ 1402  gedit timber.cpp&
+ 1403  g++ timber.cpp -O test -lsfml-system -lsfml-window -lsfml-graphics
+ 1404  ./test
+ 1405  g++ timber.cpp -O test -lsfml-system -lsfml-window -lsfml-graphics
+ 1406  ./test
+ 1407  g++ timber.cpp -O test -lsfml-system -lsfml-window -lsfml-graphics
+ 1408  ./test
+ 1409  g++ timber.cpp -O test -lsfml-system -lsfml-window -lsfml-graphics
+ 1410  ./test
+ 1411  g++ timber.cpp -O test -lsfml-system -lsfml-window -lsfml-graphics
+ 1412  ./test
+ 1413  g++ timber.cpp -O test -lsfml-system -lsfml-window -lsfml-graphics
+ 1414  ./test
+ 1415  g++ timber.cpp -O test -lsfml-system -lsfml-window -lsfml-graphics
+ 1416  ./test
+ 1417  g++ timber.cpp -O test -lsfml-system -lsfml-window -lsfml-graphics
+ 1418  ./test
+ 1419  g++ timber.cpp -O test -lsfml-system -lsfml-window -lsfml-graphics
+ 1420  ./test
+ 1421  g++ timber.cpp -O test -lsfml-system -lsfml-window -lsfml-graphics
+ 1422  ./test
+ 1423  g++ timber.cpp -O test -lsfml-system -lsfml-window -lsfml-graphics
+ 1424  ./test
+ 1425  g++ timber.cpp -O test -lsfml-system -lsfml-window -lsfml-graphics
+ 1426  clear
+ 1427  g++ timber.cpp -O test -lsfml-system -lsfml-window -lsfml-graphics
+ 1428  ./test
+ 1429  clear
+ 1430  g++ timber.cpp -O test -lsfml-system -lsfml-window -lsfml-graphics
+ 1431  ./test
+ 1432  g++ timber.cpp -O test -lsfml-system -lsfml-window -lsfml-graphics
+ 1433  ./test
+ 1434  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1435  ./test
+ 1436  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1437  ./test
+ 1438  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1439  ./test
+ 1440  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1441  ./test
+ 1442  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1443  ./test
+ 1444  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1445  ./test
+ 1446  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1447  clear
+ 1448  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1449  clear
+ 1450  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1451  clear
+ 1452  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1453  clear
+ 1454  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1455  ./test
+ 1456  ifcongif
+ 1457  ifconfig
+ 1458  clear
+ 1459  sh
+ 1460  ls
+ 1461  history
+ 1462  ls
+ 1463  ping
+ 1464  ping 172.17.30.102
+ 1465  ping 172.17.13.80
+ 1466  ping 172.17.154.74
+ 1467  make
+ 1468  git add .
+ 1469  git commit -m"Time Bar Added"
+ 1470  git push
+ 1471  git status
+ 1472  make
+ 1473  git add .
+ 1474  git commit -m" Branches  Added"
+ 1475  git push
+ 1476  make
+ 1477  git push [A
+ 1478  make
+ 1479  git add .
+ 1480  git commit -m"added RIP"
+ 1481  git log
+ 1482  git status
+ 1483  git push
+ 1484  timber.cpp &
+ 1485  gedit timber.cpp&
+ 1486  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1487  ./test
+ 1488  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1489  ./test
+ 1490  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1491  ./test
+ 1492  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1493  ./test
+ 1494  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1495  ./test
+ 1496  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1497  ./test
+ 1498  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics
+ 1499  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics -lsfml-audio
+ 1500  clear
+ 1501  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics -lsfml-audio
+ 1502  clear
+ 1503  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics -lsfml-audio
+ 1504  ./test
+ 1505  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics -lsfml-audio
+ 1506  ./test
+ 1507  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics -lsfml-audio
+ 1508  ./test
+ 1509  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics -lsfml-audio
+ 1510  ./test
+ 1511  g++ timber.cpp -o test -lsfml-system -lsfml-window -lsfml-graphics -lsfml-audio
+ 1512  ./test
+ 1513  cd 2241011008
+ 1514  gedit v.txt &
+ 1515  cd ..
+ 1516  cd Desktop
+ 1517  ls
+ 1518  cd 2241002199_GPWC++
+ 1519  ls
+ 1520  cler
+ 1521  clear
+ 1522  history
+ 1523  clear
+ 1524  lsblk
+ 1525  clear
+ 1526  lsb_release
+ 1527  lsb_release -a
+ 1528  volums
+ 1529  volume
+ 1530  clear
+ 1531  volumes
+ 1532  clear
+ 1533  df
+ 1534  dfh
+ 1535  df -h
+ 1536  df -q
+ 1537  df --q
+ 1538  df -w
+ 1539  df -e
+ 1540  df --r
+ 1541  clear
+ 1542  code .
+ 1543  code . && exit
+ 1544  df
+ 1545  clear
+ 1546  lsblk
+ 1547  lsblk -h
+ 1548  lsblk -j
+ 1549  lsblk -J
+ 1550  clear
+ 1551  exit
+ 1552  clear
+ 1553  kubectl version
+ 1554  clear
+ 1555  history
+ 1556  clear
+ 1557  cpp
+ 1558  clear
+ 1559  run.sh
+ 1560  histor
+ 1561  history
+ 1562  clear
+ 1563  ./run.sh
+ 1564  ls
+ 1565  exit
+ 1566  ifconfig
+ 1567  sqlplus id2241007032/id2241007032@//172.30.16.99/ora11g
+ 1568  nano romeo.txt
+ 1569  rlwrap
+ 1570  su iteradmin
+ 1571  clear
+ 1572  ls
+ 1573  vi .bashrc 
+ 1574  clear
+ 1575  shubhdb
+ 1576  source .bashrc
+ 1577  shubhdb
+ 1578  route -n
+ 1579  mkdir 2241003044
+ 1580  cd 2241003044
+ 1581  gedit q1.cpp &
+ 1582  gedit q2.cpp &
+ 1583  gcc q2.cpp
+ 1584  ./a.out
+ 1585  g++ q2.cpp
+ 1586  ./a.out
+ 1587  g++ q2.cpp &
+ 1588  ./a.out
+ 1589  g++ q2.cpp &
+ 1590  ./a.out
+ 1591  clear
+ 1592  g++ q2.cpp &
+ 1593  pip install textatstic
+ 1594  pip install textatistic
+ 1595  pip --version
+ 1596  pip -v
+ 1597  clear
+ 1598  history
+ 1599  pip install textatistic
+ 1600  pip install appdirs && pip install textatistic
+ 1601  pip install pyhyphen==2.0.5
+ 1602  pip install textatistic
+ 1603  clear
+ 1604  history
+ 1605  vim pipinstall.sh
+ 1606  history
+ 1607  clear
+ 1608  pip install --force-reinstall hyphen
+ 1609  history
+ 1610  vim test
+ 1611  pip show hyphen
+ 1612  pip install pyphen
+ 1613  pip uninstall hyphen && pip install hyphen
+ 1614  python -m spacy download en
+ 1615  python3 -m spacy download en
+ 1616  pip install spacy
+ 1617  pip install --upgrade pip setuptools
+ 1618  pip install testresources
+ 1619  pip install spacy
+ 1620  pip install numpy==1.24.4
+ 1621  pip install spacy
+ 1622  pip install --no-cache-dir spacy
+ 1623  vim run.sh
+ 1624  ./run.sh
+ 1625  chmod +x run.sh
+ 1626  ./run.sh
+ 1627  pip install cython preshed thinc
+ 1628  python -m venv myenv
+ 1629  source myenv/bin/activate
+ 1630  pip install --upgrade pip
+ 1631  pip install numpy spacy
+ 1632  pip install spacy==3.7.0
+ 1633  cd
+ 1634  cd ..
+ 1635  history
+ 1636  pip install hyphen
+ 1637  python3 -m venv myenv
+ 1638  source myenv/bin/activate  # On Windows, use myenv\Scripts\activate
+ 1639  pip install textatistic pyphen
+ 1640  pip uninstall hyphen
+ 1641  pip install hyphen
+ 1642  clear
+ 1643  cd Desktop
+ 1644  ls
+ 1645  cd 2241002199_PyDS
+ 1646  ls
+ 1647  PyLab-7
+ 1648  mkdir PyLab-7 && cd PyLab-7
+ 1649  jupyter notebook
+ 1650  clear
+ 1651  jupyter notebook
+ 1652  clear && jupyter notebook
+ 1653  clear
+ 1654  clear && jupyter notebook
+ 1655  cd
+ 1656  clear
+ 1657  ls
+ 1658  sqlplus id2241002199/id2241002199@//172.30.16.99/ora11g
+ 1659  clear
+ 1660  exit
+ 1661  cd 224103044
+ 1662  mkdir 2241003044
+ 1663  cd 2241003044
+ 1664  gedit timber.cpp &
+ 1665  ls
+ 1666  cd sound
+ 1667  ls
+ 1668  cd ..
+ 1669  ls
+ 1670  clear
+ 1671  cd 2241003044
+ 1672  ls
+ 1673  cd ..
+ 1674  cd sound
+ 1675  g++ timber1.cpp -o timber1 -lsfml-system -lsfml-window -lsfml-graphics -lsfml-audio
+ 1676  gedit timber1.cpp
+ 1677  g++ timber1.cpp -o timber1 -lsfml-system -lsfml-window -lsfml-graphics -lsfml-audio
+ 1678  ./timber1
+ 1679  g++ timber1.cpp -o timber1 -lsfml-system -lsfml-window -lsfml-graphics -lsfml-audio
+ 1680  ./timber1
+ 1681  g++ timber1.cpp -o timber1 -lsfml-system -lsfml-window -lsfml-graphics -lsfml-audio
+ 1682  ./timber1
+ 1683  clear
+ 1684  g++ timber1.cpp -o timber1 -lsfml-system -lsfml-window -lsfml-graphics -lsfml-audio
+ 1685  ./timber1
+ 1686  gedit noName.cpp &
+ 1687  ls
+ 1688  clear
+ 1689  history
+ 1690  clear
+ 1691  vim --help
+ 1692  clear
+ 1693  history
+ 1694  clear
+ 1695  zsh
+ 1696  clear
+ 1697  ru
+ 1698  clear
+ 1699  root
+ 1700  clear
+ 1701  exit
+ 1702  bash echo hello
+ 1703  bash hello
+ 1704  clear
+ 1705  bash
+ 1706  exit
+ 1707  bash
+ 1708  exit
+ 1709  git log
+ 1710  make
+ 1711  git log
+ 1712  git status
+ 1713  git pull
+ 1714  git pull --force
+ 1715  git stash
+ 1716  git pull
+ 1717  make
+ 1718  git add .
+ 1719  git commit -m"branches are added"
+ 1720  git push
+ 1721  make
+ 1722  gedit Pong.cpp
+ 1723  gedit Pong.cpp &
+ 1724  g++ Pong.cpp -o pong -lsfml-graphics -lsfml-window -lsfml-system
+ 1725  ./pong
+ 1726  g++ Pong.cpp -o pong -lsfml-graphics -lsfml-window -lsfml-system
+ 1727  ./pong
+ 1728  g++ Pong.cpp -o pong -lsfml-graphics -lsfml-window -lsfml-system
+ 1729  ./pong
+ 1730  g++ Pong.cpp -o pong -lsfml-graphics -lsfml-window -lsfml-system
+ 1731  ./pong
+ 1732  gedit bat.cpp &
+ 1733  make
+ 1734  git pull
+ 1735  git stash
+ 1736  git pull
+ 1737  make
+ 1738  isqlplus
+ 1739  sqlcmd
+ 1740  sudo mysql -u root -p
+ 1741  sudo apt update
+ 1742  sudo mysql
+ 1743  sudo mysql -u root
+ 1744  mysql -u root
+ 1745  sqlplus
+ 1746  sqlplus system/oracle@//localhost:1521/XEPDB1
+ 1747  isqlplus
+ 1748  sqlplus / as sysdba
+ 1749  isqlplus
+ 1750  g++ Pong.cpp -o pong -lsfml-graphics -lsfml-window -lsfml-system
+ 1751  ls
+ 1752  g++ pong.cpp bat.cpp -o pong
+ 1753  g++ Pong.cpp bat.cpp -o pong
+ 1754  g++ Pong.cpp -o pong -lsfml-graphics -lsfml-window -lsfml-system
+ 1755  ./pong
+ 1756  g++ Pong.cpp -o pong -lsfml-graphics -lsfml-window -lsfml-system
+ 1757  ./pong
+ 1758  g++ Pong.cpp -o pong -lsfml-graphics -lsfml-window -lsfml-system
+ 1759  ./pong
+ 1760  g++ Pong.cpp -o pong -lsfml-graphics -lsfml-window -lsfml-system
+ 1761  ./pong
+ 1762  g++ Pong.cpp -o pong -lsfml-graphics -lsfml-window -lsfml-system
+ 1763  ./pong
+ 1764  g++ Pong.cpp -o pong -lsfml-graphics -lsfml-window -lsfml-system
+ 1765  ./pong
+ 1766  g++ Pong.cpp -o pong -lsfml-graphics -lsfml-window -lsfml-system
+ 1767  ./pong
+ 1768  g++ Pong.cpp -o pong -lsfml-graphics -lsfml-window -lsfml-system
+ 1769  ./pong
+ 1770  g++ Pong.cpp -o pong -lsfml-graphics -lsfml-window -lsfml-system
+ 1771  ./pong
+ 1772  g++ Pong.cpp -o pong -lsfml-graphics -lsfml-window -lsfml-system
+ 1773  ./pong
+ 1774  g++ Pong.cpp -o pong -lsfml-graphics -lsfml-window -lsfml-system
+ 1775  ./pong
+ 1776  gedit ball.cpp &
+ 1777  g++ Pong.cpp -o pong -lsfml-graphics -lsfml-window -lsfml-system
+ 1778  touch test.ipynb
+ 1779  rm test.ipynb
+ 1780  cd ..
+ 1781  rm -r Test/
+ 1782  exit
+ 1783  ls
+ 1784  cd 2241002199_GPWC++
+ 1785  cd Desktop/2241002199_GPWC++
+ 1786  ls
+ 1787  code .
+ 1788  cd ..
+ 1789  mkdir Test && cd Test && code .
+ 1790  cd ..
+ 1791  ls
+ 1792  cd Test
+ 1793  clear
+ 1794  exit
+ 1795  touch link.txt
+ 1796  vim link.txt
+ 1797  clear
+ 1798  vim link.txt
+ 1799  clear
+ 1800  touch token.txt
+ 1801  vim token.txt
+ 1802  rm token.txt
+ 1803  rm link.txt
+ 1804  clear
+ 1805  ls
+ 1806  rm Untitled.ipynb
+ 1807  clear
+ 1808  exit
+ 1809  jupyter notebook
+ 1810  clear
+ 1811  cd Desktop
+ 1812  cd 2241002199_PyDS
+ 1813  ls
+ 1814  mkdir PyLab-9
+ 1815  cd PyLab-9
+ 1816  jupyter notebook
+ 1817  clear
+ 1818  exit
+ 1819  clear
+ 1820  mkdir Test && mv start.cpp Test/
+ 1821  ls
+ 1822  -rm Test/
+ 1823  rm Test
+ 1824  rm -r Test/
+ 1825  clear
+ 1826  cd Timber-Man-Game
+ 1827  mkdir Test && mv start.cpp Test/
+ 1828  clear
+ 1829  cd ..
+ 1830  clear
+ 1831  history
+ 1832  clear
+ 1833  cd ..
+ 1834  mkdir Test
+ 1835  cd Test
+ 1836  cd ..
+ 1837  rm -r Test/
+ 1838  clear
+ 1839  clear
+ 1840  ./run.sh
+ 1841  clear
+ 1842  cd ..
+ 1843  ./Timber-Man-Game/run.sh
+ 1844  bash Timber-Man-Game/run.sh
+ 1845  clear
+ 1846  cd Timber-Man-Game
+ 1847  clear
+ 1848  bash run.sh
+ 1849  clear
+ 1850  clear && clear
+ 1851  history
+ 1852  clear
+ 1853  history
+ 1854  clear
+ 1855  history
+ 1856  clear
+ 1857  touch start.cpp
+ 1858  ./run.sh
+ 1859  clear
+ 1860  ./run.sh
+ 1861  clear
+ 1862  cd 2241003044
+ 1863  gedit pong.cpp &
+ 1864  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1865  clear
+ 1866  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1867  ./pong
+ 1868  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1869  clear
+ 1870  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1871  clear
+ 1872  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1873  clear
+ 1874  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1875  clear
+ 1876  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1877  clear
+ 1878  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1879  clear
+ 1880  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1881  ./pong
+ 1882  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1883  ./pong
+ 1884  gedit bat.cpp
+ 1885  clear
+ 1886  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1887  ./pong
+ 1888  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1889  clear
+ 1890  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1891  clear
+ 1892  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1893  clear
+ 1894  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1895  clear
+ 1896  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1897  clear
+ 1898  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1899  clear
+ 1900  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1901  clear
+ 1902  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1903  clear
+ 1904  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1905  clear
+ 1906  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1907  clear
+ 1908  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1909  clear
+ 1910  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1911  ./pong
+ 1912  isqlplus
+ 1913  regrp
+ 1914  clear
+ 1915  history
+ 1916  isqlplus
+ 1917  clear
+ 1918  exit
+ 1919  cd 2241003044
+ 1920  gedit bat.cpp &
+ 1921  gedit pong.cpp &
+ 1922  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1923  ./pong
+ 1924  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1925  ./pong
+ 1926  1080 1090
+ 1927  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1928  ./pong
+ 1929  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1930  ./pong
+ 1931  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1932  ./pong
+ 1933  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1934  ./pong
+ 1935  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1936  ./pong
+ 1937  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1938  ./pong
+ 1939  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1940  ./pong
+ 1941  gedit ball.cpp &
+ 1942  clear
+ 1943  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1944  ./pong
+ 1945  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1946  ./pong
+ 1947  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1948  ./pong
+ 1949  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1950  ./pong
+ 1951  ./pong
+ 1952  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1953  ./pong
+ 1954  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1955  ./pong
+ 1956  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1957  clear
+ 1958  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1959  ./pong
+ 1960  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1961  clear
+ 1962  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1963  ./pong
+ 1964  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1965  ./pong
+ 1966  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1967  ./pong
+ 1968  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1969  ./pong
+ 1970  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1971  ./pong
+ 1972  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1973  ./pong
+ 1974  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1975  ./pong
+ 1976  clear
+ 1977  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1978  ./pong
+ 1979  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1980  ./pong
+ 1981  g++ pong.cpp -o pong -lsfml-system -lsfml-window -lsfml-graphics
+ 1982  ./pong
+ 1983  ls
+ 1984  mkdir 2241002199_CNS && cd 2241002199_CNS
+ 1985  touch cns1.py cns2.py
+ 1986  code .
+ 1987  exit
+ 1988  touch run1.sh run2.sh
+ 1989  rm run1.sh run2.sh
+ 1990  vim run1.sh
+ 1991  chmod +x run1.sh && vim run2.sh
+ 1992  chmod +x run2.sh
+ 1993  clear
+ 1994  touch remain.cpp
+ 1995  git status
+ 1996  git add ./
+ 1997  git remote -v
+ 1998  git unstge
+ 1999  git status
+ 2000  git restore --staged .
+ 2001  git status
+ 2002  clear
+ 2003  ./run.sh
+ 2004  cler
+ 2005  clear
+ 2006  touch history.txt && history | echo >> history.txt
+ 2007  history | cat>history.txt
